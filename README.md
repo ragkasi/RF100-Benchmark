@@ -7,10 +7,10 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/ragkasi/RF100-Benchmark/blob/main/demo.ipynb)
 
 ## 1. Project Overview
-This project benchmarks the performance of **Supervised Learning (YOLOv8)** against **Open-Vocabulary Foundation Models (Grounding DINO)** across the **Roboflow 100 (RF100)** dataset. We evaluated performance across 56 diverse domains (Aerial, Medical, Gaming, etc.) to analyze the trade-off between the "annotation tax" of supervised models and the "generalization gap" of zero-shot models.
+This project benchmarks the performance of **Supervised Learning (YOLOv8)** against **Open-Vocabulary Foundation Models (Grounding DINO, Rex Omni)** across the **Roboflow 100 (RF100)** dataset. We evaluated performance across 56 diverse domains to analyze the trade-off between the "annotation tax" of supervised models and the "generalization gap" of zero-shot models.
 
 **Advanced Algorithm Submitted:** Grounding DINO (Open-Set Object Detector).
-**Key Contribution:** A comparative analysis showing where Zero-Shot models fail (Medical/Microscopic) vs where they succeed (Common Objects).
+**Note:** While we benchmarked both Grounding DINO and Rex Omni, the provided demo focuses on **Grounding DINO** as the primary interactive example.
 
 ## 2. Repository Structure & Description
 
@@ -26,7 +26,8 @@ This project benchmarks the performance of **Supervised Learning (YOLOv8)** agai
 - **`src/`**
   [SOURCE] The complete evaluation scripts used on the Ohio Supercomputer Center (OSC):
   - `yolov8_benchmark.py`: Runs the supervised training loop.
-  - `groundingdino_streaming.py`: Runs the Zero-Shot inference loop.
+  - `groundingdino_streaming.py`: Runs the DINO Zero-Shot inference loop.
+  - `rex_benchmark.py`: Runs the Rex Omni Zero-Shot inference loop.
   - `analyze_results.py`: Generates the comparative plots and statistics.
 
 - **`requirements.txt`**
