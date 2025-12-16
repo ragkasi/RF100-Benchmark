@@ -1,13 +1,13 @@
 # Benchmarking Classic vs. Open-Vocabulary Detectors (RF100)
 
 **Authors:** Sarim Siddiqui, Adam Haikal, Raghav Kasibhatla  
-**Course:** [Insert Course Name] - Final Project  
+**Course:** Computer Vision - Final Project  
 
 ## Project Overview
 This project benchmarks the performance of **Supervised Learning (YOLOv8)** against **Open-Vocabulary Foundation Models (Grounding DINO, Rex Omni)** across the **Roboflow 100 (RF100)** dataset. We evaluated performance across 56 diverse domains (Aerial, Medical, Gaming, etc.) to analyze the trade-off between the "annotation tax" of supervised models and the "generalization gap" of zero-shot models.
 
 ## Repository Structure
-* `demo.ipynb`: **Start Here.** A Jupyter Notebook (Google Colab compatible) that demonstrates the Zero-Shot detection pipeline on sample images.
+* `demo.ipynb`: A Jupyter Notebook (Google Colab compatible) that demonstrates the Zero-Shot detection pipeline on sample images.
 * `samples/`: Sample images from the RF100 dataset for testing.
 * `models/`: Contains a sample fine-tuned YOLOv8 model (best.pt) from our training runs.
 * `src/`: The complete benchmarking scripts used on the Ohio Supercomputer Center (OSC).
@@ -26,8 +26,8 @@ If you prefer to run locally, you will need `python 3.9+` and `CUDA 11.x`.
 
 ```bash
 # Clone repository
-git clone [YOUR_GITHUB_REPO_LINK_HERE]
-cd [YOUR_REPO_NAME]
+git clone https://github.com/ragkasi/RF100-Benchmark.git
+cd RF100-Benchmark
 
 # Install dependencies
 pip install -r requirements.txt
