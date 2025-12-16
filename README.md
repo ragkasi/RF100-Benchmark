@@ -32,7 +32,7 @@ This project benchmarks the performance of **Supervised Learning (YOLOv8)** agai
 - **`requirements.txt`**
   [ENV] List of Python dependencies for local execution.
 
-  ## 3. Installation & Usage Instructions
+## 3. Installation & Usage Instructions
 
 **Note to Graders:** The "Advanced Algorithm" (Grounding DINO) requires specific CUDA kernels that are difficult to compile on local machines. **We strongly recommend using the Google Colab link below**, which pre-installs the correct environment automatically.
 
@@ -61,7 +61,7 @@ If you prefer to run locally, you require `Python 3.9+` and a `CUDA-enabled GPU`
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/ragkasi/RF100-Benchmark.git](https://github.com/ragkasi/RF100-Benchmark.git)
+git clone https://github.com/ragkasi/RF100-Benchmark.git
 cd RF100-Benchmark
 
 # 2. Install dependencies
